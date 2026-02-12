@@ -5,11 +5,17 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 64px;
+  grid-gap: 64px;}
   
-  
+.grid-2-col{
+  grid-template-columns: 1fr 1fr;
 }
+
+.grid-3-col {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+  
+
 body {
   font-family: "Poppins", sans-serif;
   background: #3a4852;
@@ -62,7 +68,46 @@ header a {
 section {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 50px;
+  
+}
+
+main{
+  background-color: white;
+  padding: 80px;
+}
+main img {
+  max-width: 500px;
+
+}
+
+main h3{
+  font-weight:700;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  margin: 0;
+
+}
+
+main h2 {
+  font-weight:700;
+  font-size:40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.img-responsive{
+  max-width: 100%;
+}
+main p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #272044;
+  opacity: 0.7;
 }
 footer {
   background-image:
@@ -104,7 +149,7 @@ footer a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -120,8 +165,27 @@ footer a {
     font-size: 20px;
   }
 
+  main{
+    padding: 30px;
+  }
+
+  
+
+  main h3{
+    font-size:10px;
+  }
+
+  main h2 {
+    font-size: 20px;
+  }
+
+  main p{
+    font-size:12px;
+  }
+ 
+
   footer{
-    padding: 0;
+    padding: 30px;
   }
   .grid{
     grid-template-columns: 1fr;
