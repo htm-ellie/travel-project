@@ -11,8 +11,12 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.grid-3-col {
+.grid-3-col-uneven {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-3-col{
+  grid-template-columns: 1fr 1fr 1fr;
 }
   
 
@@ -65,15 +69,11 @@ header a {
   background: white;
 }
 
-section {
-  max-width: 1400px;
-  margin: 0 auto;
-  
-}
+
 
 main{
   background-color: white;
-  padding: 80px;
+  
 }
 main img {
   max-width: 500px;
@@ -99,8 +99,27 @@ main h2 {
   margin: 0;
 }
 
+main h4{
+  font-weight: 700;
+  font-size:24px;
+  margin: 0;
+  color: #272044;
+}
+
+main h5{
+  font-weight: 700;
+  font-size:13px;
+  line-height: 1.5;
+  color: #272044;
+}
+
 .img-responsive{
   max-width: 100%;
+  display: block;
+}
+
+.joe-img{
+  max-height: 237px;
 }
 main p{
   font-weight: 400;
@@ -109,6 +128,44 @@ main p{
   color: #272044;
   opacity: 0.7;
 }
+
+section {
+  padding: 100px;
+  margin: 0 auto;
+  
+}
+
+.secondary-section{
+  background: #f8f8f8;
+}
+
+.text-center{
+  text-align:center;
+}
+.card{
+  background-color: white;
+  margin: 30px 0;}
+  
+.card-body{
+  padding: 20px;
+}
+  
+
+.btn{
+  display:block;
+  color: white;
+  background: #462CB3;
+  font-weight: 700;
+  font-size: 14px;
+  line-height:1.5;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 16px;
+  
+  text-decoration:none;
+}
+
+
 footer {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -165,9 +222,7 @@ footer a {
     font-size: 20px;
   }
 
-  main{
-    padding: 30px;
-  }
+  
 
   
 
@@ -190,6 +245,10 @@ footer a {
   .grid{
     grid-template-columns: 1fr;
     grid-gap: 20px;
+  }
+
+  section{
+    padding: 30px;
   }
 
   footer h3{
