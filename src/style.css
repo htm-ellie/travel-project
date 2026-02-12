@@ -3,6 +3,16 @@
   margin: 0 auto;
 }
 
+.card-grid{
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.embed{
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 .grid {
   display: grid;
   grid-gap: 64px;}
@@ -114,13 +124,15 @@ main h5{
 }
 
 .img-responsive{
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
 .joe-img{
   max-height: 237px;
 }
+
+
 main p{
   font-weight: 400;
   font-size: 16px;
@@ -263,6 +275,13 @@ footer a {
 
   footer li{
     font-size: 12px;
+  }
+  .card-header img{
+    display:none;
+  }
+  .embed{
+    aspect-ratio: 16/9;
+    
   }
 }
 
